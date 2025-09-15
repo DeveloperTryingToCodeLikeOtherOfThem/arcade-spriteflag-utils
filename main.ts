@@ -28,11 +28,12 @@ namespace spriteutils {
         }
     }
 
-    let stateStack: FlagUtilites[] = [];
+    let stateStack: FlagUtilites[] = [new FlagUtilites()]; // <-- initialize with one
 
-    function state(): FlagUtilites{
-        return stateStack[stateStack.length]
+    function state(): FlagUtilites {
+        return stateStack[stateStack.length - 1];
     }
+
 
     //% blockId=is_destroyed block="is destroyed %sprite=variables_get(mySprite)"
     export function isDestroyed(sprite: Sprite): boolean {
