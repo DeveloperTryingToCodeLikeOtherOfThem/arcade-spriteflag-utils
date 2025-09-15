@@ -28,7 +28,7 @@ namespace spriteutils {
         }
     }
 
-    let stateStack: FlagUtilites[];
+    let stateStack: FlagUtilites[] = [];
 
     function state(): FlagUtilites{
         return stateStack[stateStack.length]
