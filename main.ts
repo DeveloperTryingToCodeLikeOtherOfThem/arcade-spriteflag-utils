@@ -1,3 +1,4 @@
+//% block="sprite util" weight=90
 namespace spriteutils {
      class FlagUtilites {
         constructor() { }
